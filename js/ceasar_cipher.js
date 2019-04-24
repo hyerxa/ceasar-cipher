@@ -3,36 +3,28 @@ function shift() {
     var newWord = new String();
     var letter;
     var alphabet = /[a-z]/i;
-    var xyz = /[x-z]/i;
     for (let i = 0; i < word.length; i++) {
         if (alphabet.test(word[i]) === false) {
             letter = word[i];
-        }
-        else if (word[i].toLowerCase() === 'x') {
+        } else if (word[i].toLowerCase() === 'x') {
             if (word[i] != 'x') {
                 letter = 'A';
-            }
-            else {
+            } else {
                 letter = 'a';
             }
-        }
-        else if (word[i].toLowerCase() === 'y') {
+        } else if (word[i].toLowerCase() === 'y') {
             if (word[i] != 'y') {
                 letter = 'B';
-            }
-            else {
+            } else {
                 letter = 'b';
             }
-        }
-        else if (word[i].toLowerCase() === 'z') {
+        } else if (word[i].toLowerCase() === 'z') {
             if (word[i] != 'z') {
                 letter = 'C';
-            }
-            else {
+            } else {
                 letter = 'c';
             }
-        }
-        else {
+        } else {
             var oldCode = word.charCodeAt(i);
             var newCode = (oldCode + 3);
             letter = String.fromCharCode(newCode);
