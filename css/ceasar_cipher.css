@@ -24,21 +24,21 @@ h4 {
 
 #input {
     padding: 0.5vw;
-    border: 0.05vw solid black;
+    border: 0.05vw solid #59AEA8;
     font-size: 2vw;
     margin: 2vw;
     width: 40vw;
 }
 
 #submit {
-    padding: 5px;
+    margin: 0.5vw;
     font-size: 2vw;
 }
 
 .box {
     border: 2vw solid #59AEA8;
     border-radius: 15px;
-    background-color: #74E2DB;
+    background: linear-gradient(to right, #B2FFFB,#74E2DB);
     width: 75vw;
     text-align: center;
     position: absolute;
