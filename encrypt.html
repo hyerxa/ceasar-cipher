@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/ceasar_cipher.css" type="text/css">
+        <meta charset="utf-8">
+        <title>Ceasar Cipher</title>
+    </head>
+    
+    <body>
+        <div class="background">
+        </div>
+        <div class="wrapper">
+          <div class="navigation">
+          <a href="encrypt.html">Encrypt</a>
+          <a href="decrypt.html">Decrypt</a>
+          </div>
+        <div class="box">
+
+          <h4>Enter the shift number:</h4>
+          <input type="text" id="shift-number" max="25" min="0">
+          <h4>Enter your text to be encrypted:</h4>
+          <input type="text" id="input">
+          <br>
+          <button type="button" id="submit" onclick="shiftUp()">submit</button>
+          <h3 id="message"></h3>
+        </div>
+        </div>
+        
+        <script src="js/ceasar_cipher.js" type="text/javascript"></script>
+    </body>
+</html>
