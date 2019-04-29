@@ -20,7 +20,7 @@ function shiftUp() {
             index1 = alphabet.indexOf(word[i].toLowerCase()); // gets the position of the character in the alphabet array
             index2 = index1 + shiftNumber; // adds number for shift
             if (26 % (index2 + 1) === 26) { // if the shift puts it out of bounds of the array (will have a remainder of 26 because it can't be divided at all)
-                index2 = index2 - 26; // subtracts 26 to get the index we want (ex. if letter was y, shift would give index of 27, we actually want index of 1 (b))
+                index2 = index2 - 26; // subtracts 26 to get the index we want (ex. if shift was 3 and letter was y, shift would give index of 27, we actually want index of 1 (b))
             }
         
             letter = alphabet[index2]; // shifted letter corresponds to new index in alphabet array
@@ -48,7 +48,7 @@ function shiftDown() {
             index1 = alphabet.indexOf(word[i].toLowerCase()); // gets the position of the character in the alphabet array
             index2 = index1 - shiftNumber; // subtracts number for shift
             if (index2 < 0) { // if the shift puts it out of bounds of the array (will have a remainder of 26 because it can't be divided at all)
-                index2 = index2 + 26; // subtracts 26 to get the index we want (ex. if letter was y, shift would give index of 27, we actually want index of 1 (b))
+                index2 = index2 + 26; // adds 26 to get the index we want (ex. if shift was 3 and letter was a, shift would give index of -3, we actually want index of 23 (x))
             }
         
             letter = alphabet[index2]; // shifted letter corresponds to new index in alphabet array
